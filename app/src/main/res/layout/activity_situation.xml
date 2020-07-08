@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="600dp"
+    tools:context=".Situation"
+    android:background="@drawable/white_layout_brown"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:gravity="center"
+            android:layout_weight="9.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이벤트 현황 ">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/Cancel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/cancel">
+        </ImageView>
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_centerInParent="true"
+        android:background="#B18363" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp">
+
+            <ListView
+                android:id="@+id/EventList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/Delete"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:text="선택 삭제"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
